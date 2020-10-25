@@ -11,3 +11,5 @@ Luego para ejecutar sass y compilar los archivos usamos
 Para usar sass que escuche los cambios en el archivo original, usamos el parámetro `--watch`
 
 - **`sass --watch ./src/sass/estilos.scss:./static/css/estilos.css`**
+
+3:15

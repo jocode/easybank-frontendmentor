@@ -4,7 +4,7 @@
   padding: 2em 0;
   text-align: center;
 
-  svg {
+  &__logo {
     display: block;
     margin: auto;
     margin-bottom: 2em;
@@ -63,6 +63,46 @@
     &__instagram {
       @include icon;
       background-image: url("../images/icon-instagram.svg");
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .wrapper {
+      display: grid;
+      column-gap: 7em;
+      grid-template-columns: 200px 1fr 400px;
+      grid-template-areas: "logo links button" "social links copyright";
+    }
+
+    &__logo {
+      grid-area: logo;
+      margin: initial;
+      // border: 1px solid green;
+    }
+
+    &__links {
+      grid-area: links;
+      // border: 1px solid salmon;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: start;
+    }
+
+    &__social {
+      grid-area: social;
+      // border: 1px solid pink;
+    }
+
+    &__button {
+      grid-area: button;
+      // border: 1px solid white;
+      text-align: right;
+    }
+
+    &__copyright {
+      grid-area: copyright;
+      // border: 1px solid blue;
+      text-align: right;
     }
   }
 }
