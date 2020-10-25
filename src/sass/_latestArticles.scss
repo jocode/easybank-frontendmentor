@@ -1,5 +1,10 @@
 .latestArticles {
+  padding: 5em 0;
   background: var(--lightGray);
+
+  .title__h1 {
+    text-align: center;
+  }
 
   &__grid {
     display: grid;
@@ -7,19 +12,26 @@
   }
 
   &__item {
-    border: 1px solid red;
+    // border: 1px solid red;
     border-radius: 0.5em;
     background: var(--white);
     overflow: hidden;
 
     &-content {
-      padding: 0 2em;
-      text-align: justify;
+      padding: 1.8em;
     }
-
+    .copy {
+      color: var(--blueGray);
+    }
+    small {
+      color: var(--blueGray);
+      margin-bottom: 1em;
+      display: block;
+    }
     img {
       width: 100%;
       object-fit: cover;
+      display: block;
     }
   }
 }
